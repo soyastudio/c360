@@ -1,0 +1,158 @@
+{
+  "_id": "200000003",
+  "customerInfo": {
+    "customer_profile": {
+      "uuid": "StringType",
+      "hhid": "StringType",
+      "guid": "StringType",
+      "club_card_nbr": "StringType",
+      "b4u_profile_ind": "BooleanType",
+      "b4u_sign_up_dt": "TimestampType",
+      "sincerely_health_ind": "BooleanType"
+    },
+    "customer_purchase_indicator": {
+      "pharmacy_purchase_ind_6m": "BooleanType",
+      "gas_rewards_ind_6m": "BooleanType",
+      "alcohol_purchase_ind_6m": "BooleanType",
+      "pet_product_purchase_ind_6m": "BooleanType",
+      "own_brand_ind_6m": "BooleanType",
+      "deal_clipped_ind_6m": "BooleanType",
+      "baby_product_purchase_ind_6m": "BooleanType",
+      "starbucks_purchase_ind_6m": "BooleanType",
+      "delicatessen_purchase_ind_6m": "BooleanType",
+      "produce_purchase_ind_6m": "BooleanType",
+      "food_service_in_6m": "StringType",
+      "frozen_grocery_purchase_ind_6m": "BooleanType",
+      "bakery_packed_outside_purchase_ind_6m": "BooleanType",
+      "dairy_purchase_ind_6m": "BooleanType",
+      "bakery_purchase_ind_6m": "BooleanType",
+      "coffee_kiosk_purchase_ind_6m": "BooleanType",
+      "seafood_purchase_ind_6m": "BooleangType",
+      "catering_purchase_ind_6m": "BooleanType",
+      "gm_hbc_purchase_ind_6m": "BooleanType",
+      "plated_meal_kits_purchase_ind_6m": "BooleanType",
+      "meat_purchase_ind_6m": "BooleanType",
+      "fuel_station_purchase_ind_6m": "BooleanType",
+      "tobacco_purchase_ind_6m": "BooleanType",
+      "bar_purchase_ind_6m": "BooleanType",
+      "floral_purchase_ind_6m": "BooleanType",
+      "ecom_purchase_ind_6m": "BooleanType"
+    },
+    "customer_engagement": {
+      "eng_mode_p3m": "StringType",
+      "eng_mode_p6m": "StringType",
+      "eng_mode_p12m": "StringType",
+      "eng_mode_lifetime": "StringType",
+      "digital_login_p12m": "StringType"
+    },
+    "customer_store_region_preference": {
+      "customer_first_used_store_id": "StringType",
+      "customer_most_used_store_id": "StringType",
+      "customer_highest_spent_store_id": "StringType",
+      "prim_store_id": "StringType",
+      "prim_b4u_region_id": "StringType",
+      "prim_division_id": "StringType",
+      "pref_store_id": "StringType",
+      "pref_b4u_region_id": "StringType",
+      "pref_division_id": "StringType",
+      "reg_ts": "TimestampType",
+      "reg_dt": "DateType",
+      "reg_store_id": "StringType",
+      "reg_b4u_region_id": "StringType",
+      "reg_division_id": "StringType",
+      "reg_report_ind": "BooleanType"
+    },
+    "customer_communication_preference": {
+      "push_enabled_ind": "BooleanType",
+      "email_opt_in_dt": "TimestampType",
+      "sms_opt_in": "StringType",
+      "sms_opt_in_dt": "TimestampType",
+      "marketable_email_ind": "BooleanType"
+    },
+    "customer_subscription": {
+      "freshpass_subscription_status_cd": "StringType",
+      "freshpass_subscription_dt": "TimestampType",
+      "schedule_and_save_ind_6m": "BooleanType"
+    },
+    "customer_transaction_dates": {
+      "last_web_visit_dt": "DateType",
+      "last_mobile_visit_dt": "DateType",
+      "last_store_visit_dt": "DateType"
+    },
+    "customer_diet_preference": {
+      "inferred_diet_cd": "StringType",
+      "explicit_diet_preference_cd": "StringType",
+      "account_explicit_diet_preferences": "ArrayType",
+      "account_explicit_diet_restrictions": "ArrayType"
+    },
+    "customer_rewards": {
+      "auto_cash_status_ind": "BooleanType",
+      "current_point_balance": "DecimalType",
+      "auto_cash_last_toggle_dt": "TimestampType",
+      "auto_cash_cashoff_earned_since_optin": "DecimalType",
+      "auto_cash_any_clip_ind": "BooleanType",
+      "lifetime_savings_amt": "DecimalType",
+      "points_expiring_next_month": "DecimalType"
+    },
+    "customer_sheer_id_identification": {
+      "student_ind": "BooleanType",
+      "snap_ind": "BooleanType",
+      "snap_expire_ts": "TimestampType",
+      "snap_txn_ind": "BooleanType",
+      "military_type": "StringType",
+      "firstresponder_ind": "BooleanType",
+      "senior_ind": "BooleanType",
+      "medical_ind": "BooleanType"
+    },
+    "customer_symphony_segment": {
+      "weekly_fact_segment_dsc": "StringType",
+      "shopstyles_segment_dsc": "StringType",
+      "true_price_segment_period_dsc": "StringType",
+      "myneed_segment_dsc": "StringType"
+    },
+    "data_science_model": {
+      "model_attribute": "StringType",
+      "model_value_string": "StringType",
+      "model_value_integer": "IntegerType",
+      "model_value_float": "FloatType",
+      "model_value_boolean": "BooleanType",
+      "added_timestamp": "DateType"
+    },
+    "customer_celebration_predictions": {
+      "current_fiscal_week_id": "IntegerType",
+      "gen_celebration_pred": "DecimalType",
+      "birthday_pred": "DecimalType",
+      "anniversary_pred": "DecimalType"
+    }
+  },
+  "segment_categories": [
+    "TBD",
+    "SUBSCRIPTIONS_RETENTION-FRESHPASS",
+    "LOYALTY_RETENTION-BIRTHDAY",
+    "LOYALTY_RETENTION-WEEKLY_SAVINGS"
+  ],
+  "account_explicit_diet_preferences": [
+    "FLEXITARIAN",
+    "VEGETARIAN",
+    "VEGAN",
+    "CLASSIC",
+    "PALEO_FRIENDLY",
+    "PESCATARIAN",
+    "CARB_CONSCIOUS",
+    "KETO_FRIENDLY"
+  ],
+  "account_explicit_diet_restrictions": [
+    "GLUTEN",
+    "SULFITE",
+    "DAIRY",
+    "EGG",
+    "FISH",
+    "MUSTARD",
+    "NIGHTSHADE",
+    "PEANUT",
+    "SESAME",
+    "SHELLFISH",
+    "SOY",
+    "TREE_NUT"
+  ]
+}

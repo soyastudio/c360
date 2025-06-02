@@ -1,0 +1,126 @@
+{
+  "_id": "4f103484-dd65-4bcb-85bc-09f3e2c4660b",
+  "customer_profile": {
+    "uuid": "4f103484-dd65-4bcb-85bc-09f3e2c4660b",
+    "hhid": {
+      "$numberLong": "990041304796"
+    },
+    "club_card_nbr": {
+      "$numberLong": "48634865799"
+    },
+    "b4u_profile_ind": false,
+    "dug_ind": false,
+    "sincerely_health_ind": false
+  },
+  "customer_purchase_indicator": {
+    "pharmacy_purchase_ind_6m": false,
+    "gas_rewards_ind_6m": false,
+    "alcohol_purchase_ind_6m": false,
+    "pet_product_purchase_ind_6m": false,
+    "own_brand_ind_6m": false,
+    "deal_clipped_ind_6m": false,
+    "baby_product_purchase_ind_6m": false,
+    "starbucks_purchase_ind_6m": false,
+    "delicatessen_purchase_ind_6m": false,
+    "produce_purchase_ind_6m": false,
+    "food_service_purchase_ind_6m": false,
+    "frozen_grocery_purchase_ind_6m": false,
+    "bakery_packed_outside_purchase_ind_6m": false,
+    "dairy_purchase_ind_6m": false,
+    "bakery_purchase_ind_6m": false,
+    "coffee_kiosk_purchase_ind_6m": false,
+    "seafood_purchase_ind_6m": false,
+    "catering_purchase_ind_6m": false,
+    "gm_hbc_purchase_ind_6m": false,
+    "plated_meal_kits_purchase_ind_6m": false,
+    "meat_purchase_ind_6m": false,
+    "fuel_station_purchase_ind_6m": false,
+    "tobacco_purchase_ind_6m": false,
+    "bar_purchase_ind_6m": false,
+    "floral_purchase_ind_6m": false,
+    "ecom_purchase_ind_6m": false
+  },
+  "customer_engagement": {
+    "last_transaction_channel_cd": "INSTORE",
+    "digital_login_p12m": false
+  },
+  "customer_store_region_preference": {
+    "customer_first_used_store_id": "N/A",
+    "customer_most_used_store_id": "N/A",
+    "customer_highest_spent_store_id": "N/A",
+    "prim_store_id": {
+      "$numberLong": "2699"
+    },
+    "prim_b4u_region_id": {
+      "$numberLong": "17"
+    },
+    "prim_division_id": {
+      "$numberLong": "17"
+    },
+    "reg_store_id": {
+      "$numberLong": "2699"
+    },
+    "reg_b4u_region_id": {
+      "$numberLong": "17"
+    },
+    "reg_division_id": {
+      "$numberLong": "17"
+    },
+    "reg_report_ind": false
+  },
+  "customer_communication_preference": {
+    "push_enabled_ind": false,
+    "email_opt_in_verified_ind": false,
+    "sms_opt_in": false,
+    "marketable_email_ind": false,
+    "sms_launch_target_ind": false
+  },
+  "customer_subscription": {
+    "freshpass_subscription_status_cd": "NULL",
+    "schedule_and_save_ind": false
+  },
+  "customer_transaction_dates": {},
+  "customer_diet_preference": {
+    "explicit_diet_preference_cd": "NULL",
+    "account_explicit_diet_preferences": [],
+    "account_explicit_diet_restrictions": []
+  },
+  "customer_rewards": {
+    "auto_cash_status_ind": false,
+    "current_point_balance": {
+      "$numberLong": "105"
+    },
+    "auto_cash_cashoff_earned_since_optin": {
+      "$numberLong": "0"
+    },
+    "auto_cash_any_clip_ind": false,
+    "lifetime_savings_amt": {
+      "$numberDecimal": "413.22"
+    },
+    "points_expiring_next_month": {
+      "$numberLong": "105"
+    }
+  },
+  "customer_sheer_id_identification": {
+    "student_ind": false,
+    "snap_ind": false,
+    "snap_txn_ind": false,
+    "firstresponder_ind": false,
+    "senior_ind": false,
+    "medical_ind": false
+  },
+  "customer_symphony_segment": {
+    "weekly_fact_segment_dsc": "UNCLASSIFIED",
+    "shopstyles_segment_dsc": "COOKING FROM SCRATCH",
+    "true_price_segment_period_dsc": "Most PriceDriven",
+    "myneed_segment_dsc": "Scratch Foodies"
+  },
+  "customer_celebrations_predictions": {},
+  "data_science_model": {
+    "model_attribute": "PZN_BIA_GRID_2024_VARIANT_A",
+    "model_value_boolean": true,
+    "added_timestamp": {
+      "$date": "2024-11-20T23:30:19.696Z"
+    }
+  }
+}

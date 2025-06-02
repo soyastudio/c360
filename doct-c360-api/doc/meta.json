@@ -1,0 +1,1057 @@
+{
+  "_id": {
+    "$oid": "680184c8ef28f47636ca947a"
+  },
+  "catalog_metadata": [
+    {
+      "name": "CustomerProfile",
+      "fields": [
+        {
+          "name": "uuid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= uuid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "retail_customer_uuid",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerProfile.uuid"
+        },
+        {
+          "name": "hhid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= hhid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "household_id",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerProfile.hhid"
+        },
+        {
+          "name": "b4uprofileind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= b4uprofileind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "b4u_profile_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerProfile.b4u_profile_ind"
+        },
+        {
+          "name": "b4usignup_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= b4usignup_dt",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "b4u_sign_up_dt",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerProfile.b4u_sign_up_dt"
+        },
+        {
+          "name": "customer_created_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= customer_created_dt",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "customer_created_dt",
+          "bq_column_data_type": "DateType",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "birth_month",
+          "description": "Birth month for a customer. SRC_TABLE=C360_Customer_Profile FIELD_NAME= birth_month",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "birth_month",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "banner_name",
+          "description": "Banner name. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= banner_name",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "banner_name",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        }
+      ]
+    },
+    {
+      "name": "purchaseIndicators",
+      "fields": [
+        {
+          "name": "pharmacypurchaseind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=pharmacy_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "pharmacy_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.pharmacy_purchase_ind_6m"
+        },
+        {
+          "name": "gasrewardsind",
+          "description": "Gas rewards indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=gas_rewards_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "gas_rewards_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.gas_rewards_ind_6m"
+        },
+        {
+          "name": "alcoholpurchaseind",
+          "description": "Alcohol purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=alcohol_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "alcohol_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.alcohol_purchase_ind_6m"
+        },
+        {
+          "name": "petproductpurchase_ind",
+          "description": "Pet product purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=pet_product_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "pet_product_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.pet_product_purchase_ind_6m"
+        },
+        {
+          "name": "ownbrandind",
+          "description": "Own brand indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=own_brand_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "own_brand_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.own_brand_ind_6m"
+        },
+        {
+          "name": "dealclippedind",
+          "description": "Deal clipped indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=deal_clipped_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "deal_clipped_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.deal_clipped_ind_6m"
+        },
+        {
+          "name": "babyproductpurchase_ind",
+          "description": "Baby product purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=baby_product_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "baby_product_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.baby_product_purchase_ind_6m"
+        },
+        {
+          "name": "starbuckspurchaseind",
+          "description": "Starbucks purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=starbucks_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "starbucks_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.starbucks_purchase_ind_6m"
+        },
+        {
+          "name": "delicatessenpurchaseind",
+          "description": "Delicatessen purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=delicatessen_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "delicatessen_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.delicatessen_purchase_ind_6m"
+        },
+        {
+          "name": "producepurchaseind",
+          "description": "Produce purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=produce_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "produce_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.pet_product_purchase_ind_6m"
+        },
+        {
+          "name": "foodservicein",
+          "description": "Food service indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=food_service_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "food_service_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.food_service_ind_6m"
+        },
+        {
+          "name": "frozengrocerypurchase_ind",
+          "description": "Frozen grocery purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=frozen_grocery_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "frozen_grocery_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.frozen_grocery_purchase_ind_6m"
+        },
+        {
+          "name": "bakerypackedoutsidepurchaseind",
+          "description": "Bakery packed outside purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=bakery_packed_outside_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "bakery_packed_outside_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.bakery_packed_outside_purchase_ind_6m"
+        },
+        {
+          "name": "dairypurchaseind",
+          "description": "Dairy purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=dairy_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "dairy_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "IS_AggregatorAPI_AVILABLE": true,
+          "c360API_attribute": "customer_purchase_indicator.dairy_purchase_ind_6m"
+        },
+        {
+          "name": "bakerypurchaseind",
+          "description": "Bakery purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=bakery_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "bakery_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.bakery_purchase_ind_6m"
+        },
+        {
+          "name": "coffeekioskpurchase_ind",
+          "description": "Coffee kiosk purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=coffee_kiosk_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "coffee_kiosk_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.coffee_kiosk_purchase_ind_6m"
+        },
+        {
+          "name": "seafoodpurchaseind",
+          "description": "Seafood purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=seafood_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "seafood_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.seafood_purchase_ind_6m"
+        },
+        {
+          "name": "cateringpurchaseind",
+          "description": "Catering purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=catering_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "catering_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.catering_purchase_ind_6m"
+        },
+        {
+          "name": "gmhbcpurchase_ind",
+          "description": "GMHBC purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=gmhbc_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "gmhbc_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.gmhbc_purchase_ind_6m"
+        },
+        {
+          "name": "platedmealkitspurchaseind",
+          "description": "Plated meal kits purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=plated_meal_kits_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "plated_meal_kits_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.plated_meal_kits_purchase_ind_6m"
+        },
+        {
+          "name": "meatpurchaseind",
+          "description": "Meat purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=meat_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "meat_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.pet_product_purchase_ind_6m"
+        },
+        {
+          "name": "fuelstationpurchase_ind",
+          "description": "Fuel station purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=fuel_station_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "fuel_station_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.fuel_station_purchase_ind_6m"
+        },
+        {
+          "name": "tobaccopurchaseind",
+          "description": "Tobacco purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=tobacco_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "tobacco_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.tobacco_purchase_ind_6m"
+        },
+        {
+          "name": "barpurchaseind",
+          "description": "Bar purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=bar_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "bar_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.bar_purchase_ind_6m"
+        },
+        {
+          "name": "floralpurchaseind",
+          "description": "Floral purchase indicator. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=floral_purchase_ind_6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "floral_purchase_ind_6m",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customer_purchase_indicator.floral_purchase_ind_6m"
+        }
+      ]
+    },
+    {
+      "name": "CustomerEngagement",
+      "fields": [
+        {
+          "name": "lasttransactionchannel_cd",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= last_transaction_channel_cd",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "last_transaction_channel_cd",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.last_transaction_channel_cd"
+        },
+        {
+          "name": "engmodep3m",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= engmodep3m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "eng_mode_p3m",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.eng_mode_p3m"
+        },
+        {
+          "name": "engmodep6m",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= engmodep6m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "eng_mode_p6m",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.eng_mode_p6m"
+        },
+        {
+          "name": "engmodep12m",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= engmodep12m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "eng_mode_p12m",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.eng_mode_p12m"
+        },
+        {
+          "name": "engmodelifetime",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= engmodelifetime",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "eng_mode_lifetime",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.eng_mode_lifetime"
+        },
+        {
+          "name": "digitalloginp12m",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= digitalloginp12m",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "digital_login_p12m",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerEngagement.digital_login_p12m"
+        }
+      ]
+    },
+    {
+      "name": "CustomerCommunicationPreference",
+      "fields": [
+        {
+          "name": "email_opt_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= email_opt_ind",
+          "bq_view_name": "",
+          "bq_column_name": "email_opt_ind",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "email_opt_in_date",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= email_opt_in_date",
+          "bq_view_name": "",
+          "bq_column_name": "email_opt_in_date",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "sms_opt_in",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= sms_opt_in",
+          "bq_view_name": "",
+          "bq_column_name": "sms_opt_in",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "sms_opt_in_date",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= sms_opt_in_date",
+          "bq_view_name": "",
+          "bq_column_name": "sms_opt_in_date",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "push_indicator",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= push_indicator",
+          "bq_view_name": "",
+          "bq_column_name": "push_indicator",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "push_opt_in_date",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= push_opt_in_date",
+          "bq_view_name": "",
+          "bq_column_name": "push_opt_in_date",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        }
+      ]
+    },
+    {
+      "name": "CustomerStoreRegionPreference",
+      "fields": [
+        {
+          "name": "customerfirstusedstoreid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= customerfirstusedstoreid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "customer_first_used_store_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.customer_first_used_store_id"
+        },
+        {
+          "name": "customermostusedstoreid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= customermostusedstoreid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "customer_most_used_store_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.customer_most_used_store_id"
+        },
+        {
+          "name": "customerhighestspentstoreid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= customerhighestspentstoreid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "customer_highest_spent_store_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.customer_highest_spent_store_id"
+        },
+        {
+          "name": "primstoreid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= primstoreid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "prim_store_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.prim_store_id"
+        },
+        {
+          "name": "primb4uregion_id",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= primb4uregion_id",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "prim_b4u_region_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.prim_b4u_region_id"
+        },
+        {
+          "name": "primdivisionid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= primdivisionid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "prim_division_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.prim_division_id"
+        },
+        {
+          "name": "prefstoreid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= prefstoreid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "pref_store_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.pref_store_id"
+        },
+        {
+          "name": "prefb4uregion_id",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= prefb4uregion_id",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "pref_b4u_region_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.pref_b4u_region_id"
+        },
+        {
+          "name": "prefdivisionid",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= prefdivisionid",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "pref_division_id",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerStoreRegionPreference.pref_division_id"
+        }
+      ]
+    },
+    {
+      "name": "CustomerFPSubscription",
+      "fields": [
+        {
+          "name": "freshpass_subscriptionstatus_cd",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= freshpass_subscriptionstatus_cd",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "freshpass_subscriptionstatus_cd",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSubscription.freshpass_subscription_status_cd"
+        },
+        {
+          "name": "freshpass_subscriptiondt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= freshpass_subscriptiondt",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "freshpass_subscription_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSubscription.freshpass_subscription_dt"
+        },
+        {
+          "name": "fp_renewaldt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= fp_renewaldt",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "fp_renewaldt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "subscription_plan_type_nm",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= subscription_plan_type_nm",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "subscription_plan_type_nm",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "trialdurationdays_nbr",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= trialdurationdays_nbr",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "trialdurationdays_nbr",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "liferewardsearned_qty",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= liferewardsearned_qty",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "liferewardsearned_qty",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "cycle_rewardpoints_qty",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= cycle_rewardpoints_qty",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "cycle_rewardpoints_qty",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "fp_liferewardpointsqty",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= fp_liferewardpointsqty",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "fp_liferewardpointsqty",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "fp_renewal_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= fp_renewal_dt",
+          "bq_view_name": "C360_Freshpass",
+          "bq_column_name": "fp_renewal_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        }
+      ]
+    },
+    {
+      "name": "CustomerDietPreference",
+      "fields": [
+        {
+          "name": "inferreddietcd",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= inferreddietcd",
+          "bq_view_name": "C360_CUSTOMER_DIET_PREFERENCE",
+          "bq_column_name": "inferreddietcd",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerDietPreference.inferred_diet_cd"
+        },
+        {
+          "name": "explicitdietpreference_cd",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= explicitdietpreference_cd",
+          "bq_view_name": "C360_CUSTOMER_DIET_PREFERENCE",
+          "bq_column_name": "explicitdietpreference_cd",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerDietPreference.explicit_diet_preference_cd"
+        },
+        {
+          "name": "account_diet_cd_1",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= account_diet_cd_1",
+          "bq_view_name": "C360_CUSTOMER_DIET_PREFERENCE",
+          "bq_column_name": "account_diet_cd_1",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "account_diet_cd_2",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= account_diet_cd_2",
+          "bq_view_name": "C360_CUSTOMER_DIET_PREFERENCE",
+          "bq_column_name": "account_diet_cd_2",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        }
+      ]
+    },
+    {
+      "name": "CustomerRewards",
+      "fields": [
+        {
+          "name": "autocashstatus_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= autocashstatus_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "auto_cash_status_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.auto_cash_status_ind"
+        },
+        {
+          "name": "currentpointbalance",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= currentpointbalance",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "current_point_balance",
+          "bq_column_data_type": "NumericType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.current_point_balance"
+        },
+        {
+          "name": "autocashlasttoggledt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= autocashlasttoggledt",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "auto_cash_last_toggle_dt",
+          "bq_column_data_type": "DateType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.auto_cash_last_toggle_dt"
+        },
+        {
+          "name": "autocashcashoffearnedsince_optin",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= autocashcashoffearnedsince_optin",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "auto_cash_cashoff_earned_since_optin",
+          "bq_column_data_type": "NumericType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.auto_cash_cashoff_earned_since_optin"
+        },
+        {
+          "name": "autocashanyclipind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= autocashanyclipind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "auto_cash_any_clip_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.auto_cash_any_clip_ind"
+        },
+        {
+          "name": "lifetimesavingsamt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lifetimesavingsamt",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "lifetime_savings_amt",
+          "bq_column_data_type": "NumericType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.lifetime_savings_amt"
+        },
+        {
+          "name": "pointsexpiringnext_month",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= pointsexpiringnext_month",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "points_expiring_next_month",
+          "bq_column_data_type": "NumericType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerRewards.points_expiring_next_month"
+        }
+      ]
+    },
+    {
+      "name": "CustomerSheerIDIdentification",
+      "fields": [
+        {
+          "name": "student_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= student_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "student_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.student_ind"
+        },
+        {
+          "name": "snap_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= snap_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "snap_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.snap_ind"
+        },
+        {
+          "name": "snapexpirets",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= snapexpirets",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "snapexpirets",
+          "bq_column_data_type": "TimestampType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.snap_expire_ts"
+        },
+        {
+          "name": "snaptxnind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= snaptxnind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "snaptxnind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.snap_txn_ind"
+        },
+        {
+          "name": "military_type",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= military_type",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "military_type",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.military_type"
+        },
+        {
+          "name": "firstresponder_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= firstresponder_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "firstresponder_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.firstresponder_ind"
+        },
+        {
+          "name": "senior_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= senior_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "senior_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.senior_ind"
+        },
+        {
+          "name": "medical_ind",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= medical_ind",
+          "bq_view_name": "C360_CUSTOMER_PROFILE",
+          "bq_column_name": "medical_ind",
+          "bq_column_data_type": "BooleanType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSheerIdIdentification.medical_ind"
+        }
+      ]
+    },
+    {
+      "name": "CustomerSymphonySegment",
+      "fields": [
+        {
+          "name": "weeklyfactsegment_dsc",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= weeklyfactsegment_dsc",
+          "bq_view_name": "C360_Customer_Segment",
+          "bq_column_name": "weekly_fact_segment_dsc",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSymphonySegment.weekly_fact_segment_dsc"
+        },
+        {
+          "name": "shopstylessegmentdsc",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= shopstylessegmentdsc",
+          "bq_view_name": "C360_Customer_Segment",
+          "bq_column_name": "shopstyles_segment_dsc",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSymphonySegment.shopstyles_segment_dsc"
+        },
+        {
+          "name": "truepricesegmentperioddsc",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= truepricesegmentperioddsc",
+          "bq_view_name": "C360_Customer_Segment",
+          "bq_column_name": "true_price_segment_period_dsc",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSymphonySegment.true_price_segment_period_dsc"
+        },
+        {
+          "name": "myneedsegmentdsc",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= myneedsegmentdsc",
+          "bq_view_name": "C360_Customer_Segment",
+          "bq_column_name": "myneed_segment_dsc",
+          "bq_column_data_type": "StringType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerSymphonySegment.myneed_segment_dsc"
+        }
+      ]
+    },
+    {
+      "name": "dataScience",
+      "fields": [
+        {
+          "name": "model_attribute",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=model_attribute",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "model_attribute",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.model_attribute"
+        },
+        {
+          "name": "model_value_boolean",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=uuid",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "model_value_boolean",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.model_value_boolean"
+        },
+        {
+          "name": "added_timestamp",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=uuid",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "added_timestamp",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.added_timestamp"
+        },
+        {
+          "name": "model_value_integer",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=uuid",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "model_value_integer",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.model_value_integer"
+        },
+        {
+          "name": "model_value_float",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=uuid",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "model_value_float",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.model_value_float"
+        },
+        {
+          "name": "model_value_string",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=model_value_string",
+          "bq_view_name": "DS_MODEL_Profile",
+          "bq_column_name": "model_value_string",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "dataScienceModel.model_value_string"
+        }
+      ]
+    },
+    {
+      "name": "LatestEvent",
+      "fields": [
+        {
+          "name": "laststorevisit_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= laststorevisit_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "last_store_visit_dt",
+          "bq_column_data_type": "DateType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerTransactionDates.last_store_visit_dt"
+        },
+        {
+          "name": "lastwebvisit_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME=lastwebvisit_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "last_web_visit_dt",
+          "bq_column_data_type": "DateType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerTransactionDates.last_web_visit_dt"
+        },
+        {
+          "name": "lastmobilevisit_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastmobilevisit_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "last_mobile_visit_dt",
+          "bq_column_data_type": "DateType",
+          "is_available_in_c360API": true,
+          "c360API_attribute": "customerTransactionDates.last_mobile_visit_dt"
+        },
+        {
+          "name": "lastsnaptxn_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastsnaptxn_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastsnaptxn_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastdugdt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastdugdt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastdugdt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastdoordashshop_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastdoordashshop_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastdoordashshop_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastubereatsshop_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastubereatsshop_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastubereatsshop_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastinstacartshop_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastinstacartshop_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastinstacartshop_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastfreshpasstransaction_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastfreshpasstransaction_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastfreshpasstransaction_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastj4uclipped_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastj4uclipped_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastj4uclipped_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastsafewaygasrewardsdt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastsafewaygasrewardsdt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastsafewaygasrewardsdt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastpartnergasrewardsdt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastpartnergasrewardsdt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastpartnergasrewardsdt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastdigitalweeklyaddt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastdigitalweeklyaddt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastdigitalweeklyaddt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastdeliverydt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastdeliverydt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastdeliverydt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastemailsent_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastemailsent_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastemailsent_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastemailclick_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastemailclick_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastemailclick_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastemailopened_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastemailopened_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastemailopened_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastsmssent_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastsmssent_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastsmssent_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        },
+        {
+          "name": "lastmobiletransaction_dt",
+          "description": "Unique identifier for a customer. SRC_TABLE=C360_CUSTOMER_PROFILE_REFINED FIELD_NAME= lastmobiletransaction_dt",
+          "bq_view_name": "C360_Customer_Last_Event",
+          "bq_column_name": "lastmobiletransaction_dt",
+          "bq_column_data_type": "",
+          "is_available_in_c360API": false,
+          "c360API_attribute": ""
+        }
+      ]
+    }
+  ]
+}
