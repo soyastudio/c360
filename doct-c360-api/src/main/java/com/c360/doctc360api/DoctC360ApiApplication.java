@@ -22,7 +22,7 @@ public class DoctC360ApiApplication {
 		SpringApplication.run(DoctC360ApiApplication.class, args);
 	}
 
-	//@Bean
+	@Bean
 	public FilterRegistrationBean<WebFilter> webFilter() {
 		FilterRegistrationBean<WebFilter> registrationBean = new FilterRegistrationBean<>();
 		registrationBean.setFilter(new WebFilter());
