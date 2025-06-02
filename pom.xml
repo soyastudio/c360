@@ -253,6 +253,7 @@
     </dependencyManagement>
 
     <modules>
+
         <module>doct-c360-api</module>
     </modules>
 

@@ -1,0 +1,179 @@
+openapi: 3.0.1
+info:
+  title: DOCT-c360-api
+  description: 'The objective of the C360 Profile API is to support business use cases requiring low latency, realtime, responses '
+  contact:
+    name: C360 Support Team
+    url: https://albertsons.com
+  license:
+    name: Apache 2.0
+    url: https://albertsons.com
+  version: 5/29/23, 9:17 AM PST
+externalDocs:
+  url: https://albertsons.com
+servers:
+  - url: http://localhost:8080/doct-c360-api
+    description: Generated server url
+paths:
+  /v1/customer_transaction_aggregates/{uuid}:
+    get:
+      tags:
+        - c-360-customer-profile-controller
+      operationId: getDailyTransactionByUuid
+      parameters:
+        - name: uuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: startDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/DailyTransactions'
+  /v1/customer_info/{uuid}:
+    get:
+      tags:
+        - c-360-customer-profile-controller
+      operationId: getCustomerData
+      parameters:
+        - name: uuid
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/C360CustomerDataModel'
+components:
+  schemas:
+    DailyTransactions:
+      type: object
+      properties:
+        get_id:
+          type: string
+        uuid:
+          type: string
+        transaction_date:
+          type: string
+        own_brand_total_txn_cnt:
+          type: integer
+          format: int32
+        dug_txn_cnt:
+          type: integer
+          format: int32
+        delivery_txn_cnt:
+          type: integer
+          format: int32
+        alcohol_purchase_net_amount:
+          type: number
+          format: double
+      description: ''
+    C360CustomerDataModel:
+      type: object
+      properties:
+        uuid:
+          type: string
+        guid:
+          type: string
+        freshPass:
+          $ref: '#/components/schemas/FreshPass'
+        indicators:
+          $ref: '#/components/schemas/Indicators'
+        household_id:
+          type: string
+        club_card_nbr:
+          type: string
+        meal_preferences:
+          $ref: '#/components/schemas/MealPreferences'
+      description: ''
+    FreshPass:
+      type: object
+      properties:
+        freshpass_subscription_status_cd:
+          type: string
+      description: ''
+    Indicators:
+      type: object
+      properties:
+        alcohol_purchase_indicator:
+          type: boolean
+        new_customer_indicator:
+          type: string
+        ecomm_purchase_indicator:
+          type: boolean
+        dug_txn_indicator:
+          type: boolean
+        delivery_txn_indicator:
+          type: boolean
+        own_brand_purchase_indicator:
+          type: boolean
+        ecomm_last_purchase_date:
+          type: string
+        rewards_expired:
+          type: string
+      description: ''
+    MealPreferences:
+      type: object
+      properties:
+        inferred_diet_cd:
+          type: string
+        classic_diet_preference_ind:
+          type: boolean
+        keto_friendly_diet_preference_ind:
+          type: boolean
+        flexitarian_diet_preference_ind:
+          type: boolean
+        paleo_friendly_diet_preference_ind:
+          type: boolean
+        vegetarian_diet_preference_ind:
+          type: boolean
+        pescatarian_diet_preference_ind:
+          type: boolean
+        vegan_diet_preference_ind:
+          type: boolean
+        carb_conscious_diet_preference_ind:
+          type: boolean
+        soy_free_restriction_ind:
+          type: boolean
+        fish_free_restriction_ind:
+          type: boolean
+        peanut_free_restriction_ind:
+          type: boolean
+        tree_nut_free_restriction_ind:
+          type: boolean
+        shellfish_free_restriction_ind:
+          type: boolean
+        dairy_free_restriction_ind:
+          type: boolean
+        sulfite_free_restriction_ind:
+          type: boolean
+        mustard_free_restriction_ind:
+          type: boolean
+        sesame_free_restriction_ind:
+          type: boolean
+        egg_free_restriction_ind:
+          type: boolean
+        nightshade_free_restriction_ind:
+          type: boolean
+        gluten_free_restriction_ind:
+          type: boolean
+      description: ''
